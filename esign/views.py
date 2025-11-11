@@ -65,10 +65,25 @@ def change_password(request):
     return render(request, 'esign/change_password.html')    
 
 def otp_email(request):
-    return render(request, 'esign/otp_email.html')    
+    return render(request, 'mails/otp_email.html') 
+
+def login_otp_email(request):
+    return render(request, 'mails/login_otp_email.html')    
+
+def signup_otp_email(request):
+    return render(request, 'mails/signup_otp_email.html')    
+
+def new_account_email(request):
+    return render(request, 'mails/new_account_email.html')    
+
+def subscription_active_email(request):
+    return render(request, 'mails/subscription_active_email.html')    
+
+def password_reset_email(request):
+    return render(request, 'mails/password_reset_email.html')    
 
 def password_email(request):
-    return render(request, 'esign/password_email.html')    
+    return render(request, 'mails/password_email.html')    
 
 
 @login_required

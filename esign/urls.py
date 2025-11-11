@@ -39,6 +39,12 @@ urlpatterns = [
     path('forgot_password/', views.forgot_password, name='forgot_password'),
     path('change_password/', views.change_password, name='change_password'),
     path('otp_email/', views.otp_email, name='otp_email'),
+    path('login_otp_email/', views.login_otp_email, name='login_otp_email'),
+    path('signup_otp_email/', views.signup_otp_email, name='signup_otp_email'),
+    path('new_account_email/', views.new_account_email, name='new_account_email'),
+    path('subscription_active_email/', views.subscription_active_email, name='subscription_active_email'),
+    path('password_reset_email/', views.password_reset_email, name='password_reset_email'),
+    
     path('password_email/', views.password_email, name='password_email'),
 
 
